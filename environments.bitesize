@@ -1,12 +1,12 @@
-project: sample
+project: vawanir
 environments:
   - name: Development
-    namespace: sample-dev
+    namespace: vawanir-dev
     deployment:
       method: rolling-upgrade
     services:
       - name: spring-app
-        external_url: hellobite-sample.dev-bite.io
+        external_url: vawanir.prsn-dev.io
         port: 8080 
         ssl: "false"
         replicas: 1
